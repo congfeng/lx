@@ -22,6 +22,8 @@ package com.cf.code.lx;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
+import me.nereo.multi_image_selector.MultiImageSelector;
+
 public class MainActivity extends CordovaActivity
 {
     @Override
@@ -37,5 +39,6 @@ public class MainActivity extends CordovaActivity
 
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
+        MultiImageSelector.create().start(this, 1);
     }
 }
