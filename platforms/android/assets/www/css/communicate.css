@@ -1,0 +1,73 @@
+.infinite-scroll-preloader {
+    margin-top:-20px;
+}
+.card-template{
+    display:none;
+}
+.community-container{
+    width:100%;
+    padding:.2rem .6rem;
+    position:fixed;
+    bottom:0;
+    z-index:1;
+    background:#c3c3c3;
+    display:none;
+}
+.bang-container{
+    width:100%;
+    position: fixed;
+    top: 45%;
+    text-align: center;
+    display:none;
+}
+
+.bang-container .bang-send{
+    opacity: 0;
+    animation: opacity 2s ease 0s,scale 2s ease 0s;
+    -webkit-animation: opacity 2s ease 0s,scale 2s ease 0s;
+    -moz-animation: opacity 2s ease 0s,scale 2s ease 0s;
+    -ms-animation: opacity 2s ease 0s,scale 2s ease 0s;
+    -o-animation: opacity 2s ease 0s,scale 2s ease 0s;
+}
+
+@keyframes scale{
+    from{transform: scale(1,1);}
+    to{transform: scale(5,5);}
+}
+@-webkit-keyframes scale{
+    from{-webkit-transform: scale(1,1);}
+    to{-webkit-transform: scale(5,5);}
+}
+@-moz-keyframes scale{
+    from{-moz-transform: scale(1,1);}
+    to{-moz-transform: scale(5,5);}
+}
+@-ms-keyframes scale{
+    from{-ms-transform: scale(1,1);}
+    to{-ms-transform: scale(5,5);}
+}
+@-o-keyframes scale{
+    from{-o-transform: scale(1,1);}
+    to{-o-transform: scale(5,5);}
+}
+
+@keyframes opacity{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@-webkit-keyframes opacity{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@-moz-keyframes opacity{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@-ms-keyframes opacity{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@-o-keyframes opacity{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}

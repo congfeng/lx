@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="resources/iconfont/iconfont.css">
+        <link rel="stylesheet" href="resources/sm/sm.min.css">
+        <link rel="stylesheet" href="css/common.css">
+    </head>
+    <body>
+    <div class="page-group">
+		<link href="css/register.css" rel="stylesheet">
+        <div class="page page-current" id="register">
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left back"></a>
+                <h1 class='title'>sy注册</h1>
+            </header>
+            <div class="content content-padded">
+                <input type="file" accept="image/*" id="myfile"/>
+                <ul>
+                    <li id="h5file">相册1</li><br>
+                    <li id="getpicture">相册2</li><br>
+                    <li id="getPictures">相册3</li><br>
+                    <li id="takepicture">拍照</li><br>
+                </ul>
+                <img id="myImg" width="100px" height="100px;" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='resources/aliyun-oss-sdk-4.4.4.min.js' charset='utf-8'></script>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type='text/javascript' src='resources/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='resources/sm/sm.min.js' charset='utf-8'></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/register.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $.init();
+    </script>
+    
+    </body>
+</html>

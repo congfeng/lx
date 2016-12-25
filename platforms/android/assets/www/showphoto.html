@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="resources/iconfont/iconfont.css">
+        <link rel="stylesheet" href="resources/sm/sm.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <script src="js/checklogin.js" type="text/javascript"></script>
+    </head>
+    <body>
+    <!--示例说明：http://www.cnblogs.com/theroad/p/5397229.html-->
+    <div class="page-group">
+        <link href="css/showphoto.css" rel="stylesheet">
+        <link rel="stylesheet prefetch" href="resources/photoswipe/photoswipe.css">
+        <link rel="stylesheet prefetch" href="resources/photoswipe/default-skin/default-skin.css">
+        <div class="page" id="showphoto">
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left back"></a>
+                <h1 class='title'>图片展示</h1>
+            </header>
+            <div class="content content-padded">
+               <div class="my-gallery" data-pswp-uid="1">
+                    <figure>
+                        <span><a href="img/m3.jpg" data-size="670x712" external><img style="width:80%;" src="img/th1.jpg"></a></span>
+                    </figure>
+                </div>
+                <div class="my-gallery" data-pswp-uid="2">
+                    <figure>
+                        <div><a href="img/s5.jpg" data-size="286x220" external><img style="height:100%;" src="img/s5.jpg"></a></div>
+                        <figcaption style="display:none;">在这里可增加图片描述</figcaption>
+                    </figure>
+                    <figure>
+                        <div><a href="img/sb1.jpg" data-size="640x426" external><img style="height:100%;" src="img/sb1.jpg"></a></div>
+                        <figcaption style="display:none;">在这里可增加图片描述2</figcaption>
+                    </figure>
+                    <figure>
+                        <div><a href="img/sb3.jpg" data-size="768x1024" external><img style="width:100%;" src="img/sb3.jpg"></a></div>
+                        <figcaption style="display:none;">在这里可增加图片描述3</figcaption>
+                    </figure>
+                    <figure>
+                        <div><a href="img/sb4.jpg" data-size="900x596" external><img style="height:100%;" src="img/sb4.jpg"></a></div>
+                        <figcaption style="display:none;">在这里可增加图片描述4</figcaption>
+                    </figure>
+                    <figure>
+                        <div><a href="img/y1.jpeg" data-size="1200x1200" external><img  style="height:100%;" src="img/y1.jpeg"></a></div>
+                        <figcaption style="display:none;">在这里可增加图片描述5在这里可增加图片描述5在这里可增加图片描述5</figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="pswp__bg"></div>
+                <div class="pswp__scroll-wrap">
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+                    <div class="pswp__ui pswp__ui--hidden">
+                        <div class="pswp__top-bar">
+                            <div class="pswp__counter"></div>
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                            <button class="pswp__button pswp__button--share" title="Share"></button>
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                  <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div> 
+                        </div>
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="resources/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="resources/photoswipe/photoswipe-ui-default.min.js"></script>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type='text/javascript' src='resources/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='resources/sm/sm.min.js' charset='utf-8'></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/showphoto.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $.init();
+    </script>
+
+  </body>
+</html>
