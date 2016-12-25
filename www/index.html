@@ -1,49 +1,138 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+		<link rel="stylesheet" href="resources/iconfont/iconfont.css">
+        <link rel="stylesheet" href="resources/sm/sm.min.css">
+		<link rel="stylesheet" href="css/common.css">
+		<script src="js/checklogin.js" type="text/javascript"></script>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div class="page-group">
+		<link href="css/index.css" rel="stylesheet">
+        <div class="page page-current" id="index">
+            <div class="content">
+                <div class="list-block" style="margin:0;">
+                    <ul>
+                        <li class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-title-row">
+                                    <div class="item-title">隔壁老王</div>
+                                    <div class="item-subtitle"><span>已加入美菜：<span style="color:green;" id="info1">509天</span></span></div>
+                                </div>
+                                <a href="settings.html">
+                                    <span class="icon icon-settings"></span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-block">
+                    <ul>
+                        <li><a class="item-content item-link" href="communicate.html">
+                            <div class="item-inner item-title">社区交流</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="music.html">
+                            <div class="item-inner item-title">music</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="book.html">
+                            <div class="item-inner item-title">book</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="mybuddha.html">
+                            <div class="item-inner item-title">mybuddha</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="tantricbuddha.html">
+                            <div class="item-inner item-title">tantricbuddha</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="temple.html">
+                            <div class="item-inner item-title">temple</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="insight.html">
+                            <div class="item-inner item-title">insight</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="lessons.html">
+                            <div class="item-inner item-title">lessons</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="chat.html">
+                            <div class="item-inner item-title">chat</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="chatroom.html">
+                            <div class="item-inner item-title">chatroom</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="msgadd.html">
+                            <div class="item-inner item-title">创建图文信息</div>
+                        </a></li>
+                        <li><a class="item-content item-link" href="showphoto.html">
+                            <div class="item-inner item-title">图片</div>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="list-block row">
+                    <a class="open-popup col-33" data-popup=".kalendar" href="#">日历</a>
+                    <a class="open-popup col-33" data-popup=".birthday" href="#">生日</a>
+                    <a class="open-popup col-33" data-popup=".holiday" href="#">过节</a>
+                </div>
+                <div class="list-block">
+                    <ul>
+                        <li id="logout" style="text-align:center;"><a>退出登录</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popup kalendar">
+                <div class="content">
+                    <h1 class='title'>佛历、藏历、黄历</h1>
+                    <a class="pull-right close-popup">X</a>
+                </div>
+            </div>
+            <div class="popup birthday">
+                <div class="content">
+                    <h1 class='title'>佛诞日</h1>
+                    <a class="pull-right close-popup">X</a>
+                </div>
+            </div>
+            <div class="popup holiday">
+                <div class="content">
+                    <h1 class='title'>初一十五</h1>
+                    <a class="pull-right close-popup">X</a>
+                </div>
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        </div>
+    
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=pvF3bfbMR28OAbPFHPBG6Eek&s=1"></script>
+    <script src="https://g.alicdn.com/aliww/??h5.openim.sdk/1.0.6/scripts/wsdk.js,h5.openim.kit/0.3.3/scripts/kit.js?mobile=1" charset="utf-8"></script>
+    <script type='text/javascript' src='resources/aliyun-oss-sdk.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="resources/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="resources/photoswipe/photoswipe-ui-default.min.js"></script>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type='text/javascript' src='resources/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='resources/sm/sm.min.js' charset='utf-8'></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>   
+    <script src="js/register.js" type="text/javascript"></script>
+    <script src="js/communicate.js" type="text/javascript"></script>
+    <script src="js/music.js" type="text/javascript"></script>
+    <script src="js/settings.js" type="text/javascript"></script>
+    <script src="js/book.js" type="text/javascript"></script>
+    <script src="js/mybuddha.js" type="text/javascript"></script>
+    <script src="js/tantricbuddha.js" type="text/javascript"></script>
+    <script src="js/temple.js" type="text/javascript"></script>
+    <script src="js/templemap.js" type="text/javascript"></script>
+    <script src="js/insight.js" type="text/javascript"></script>
+    <script src="js/lessons.js" type="text/javascript"></script>
+    <script src="js/chatroom.js" type="text/javascript"></script>
+    <script src="js/chat.js" type="text/javascript"></script>
+    <script src="js/msgadd.js" type="text/javascript"></script>
+    <script src="js/showphoto.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $.init();
+    </script>
+	 
     </body>
 </html>

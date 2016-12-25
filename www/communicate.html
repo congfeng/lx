@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="resources/iconfont/iconfont.css">
+        <link rel="stylesheet" href="resources/sm/sm.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <script src="js/checklogin.js" type="text/javascript"></script>
+    </head>
+    <body>
+    <div class="page-group">
+        <link href="css/communicate.css" rel="stylesheet">
+        <div class="page" id="communicate">
+            <header class="bar bar-nav">
+                <a class="icon icon-left pull-left back"></a>
+                <a class="icon icon-edit pull-right"></a>
+                <h1 class='title'>交流中心</h1>
+            </header>
+            <nav class="bar bar-tab">
+                <a class="tab-item external active" href="#">
+                    <span class="icon icon-home"></span>
+                    <span class="tab-label">首页</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-star"></span>
+                    <span class="tab-label">收藏</span>
+                </a>
+                <a class="tab-item external" href="#">
+                    <span class="icon icon-settings"></span>
+                    <span class="tab-label">设置</span>
+                </a>
+            </nav>
+            <div class="content pull-to-refresh-content infinite-scroll infinite-scroll-bottom" data-ptr-distance="55" data-distance="100">
+                <div class="pull-to-refresh-layer">
+                    <div class="preloader"></div>
+                    <div class="pull-to-refresh-arrow"></div>
+                </div>
+                <div class="searchbar">
+                    <a class="searchbar-cancel">取消</a>
+                    <div class="search-input">
+                        <label class="icon icon-search" for="search"></label>
+                        <input type="search" id='search' placeholder='输入关键字...'/>
+                    </div>
+                </div>
+                <div class="buttons-tab" style="z-index:1;">
+                    <a id="rank_day" href="#tab1" class="tab-link active button">全部</a>
+                    <a id="rank_week" href="#tab2" class="tab-link button">我的关注</a>
+                </div>
+                <div class="tabs">
+                    <div id="tab1" class="tab active"></div>
+                    <div id="tab2" class="tab"></div>
+                </div>
+                <div class="list-block card-container" style="margin-top:.5rem;">
+                    <div class="card-template">
+                        <div valign="bottom" class="card-header color-white no-border no-padding">
+                            <img class='card-cover' src="http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-content-inner">
+                                <span class="color-gray pull-left name">老王</span>
+                                <span class="color-gray pull-right">发表于 2015/01/15</span>
+                                <br>
+                                <p>此处是内容...</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="link bang">赞</a>
+                            <a href="#" class="link comment">评论</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="infinite-scroll-preloader">
+                    <div class="preloader"></div>
+                </div>
+            </div>
+            <div class="row no-gutter community-container">
+                <div class="col-80 search-input">
+                    <input class="comment-input" type="search" placeholder='请输入评论...'/>
+                </div>
+                <a class="col-20 button button-fill button-primary comment-send" style="left:2%;">发送</a>
+            </div>
+            <div class="bang-container">
+                <i style='color:red;' class='iconfont bang-send'>&#xe638;</i>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type='text/javascript' src='resources/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='resources/sm/sm.min.js' charset='utf-8'></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/communicate.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $.init();
+    </script>
+
+  </body>
+</html>
