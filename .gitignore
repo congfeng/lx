@@ -1,6 +1,8 @@
 /.project
 /lx.jks
 /platforms/android/.gradle
-/platforms/android/CordovaLib/build
 /platforms/android/.idea
 /platforms/android/*.apk
+/platforms/android/*.iml
+/platforms/android/CordovaLib/build
+/platforms/android/CordovaLib/*.iml
