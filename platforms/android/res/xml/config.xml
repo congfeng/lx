@@ -24,7 +24,5 @@
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="AndroidPersistentFileLocation" value="Internal" />
-    <preference name="iosPersistentFileLocation" value="Library" />
     <preference name="AndroidExtraFilesystems" value="documents" />
-    <preference name="iosExtraFilesystems" value="documents-nosync" />
 </widget>
