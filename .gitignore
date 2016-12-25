@@ -4,5 +4,7 @@
 /platforms/android/.idea
 /platforms/android/*.apk
 /platforms/android/*.iml
+/platforms/android/*.jks
+/platforms/android/release-signing.properties
 /platforms/android/CordovaLib/build
 /platforms/android/CordovaLib/*.iml

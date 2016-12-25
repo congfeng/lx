@@ -39,6 +39,7 @@ public class MainActivity extends CordovaActivity
 
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
-        MultiImageSelector.create().start(this, 1);
+        //MultiImageSelector.create().start(this, 1);
+        LOG.i("congfeng",MultiImageSelector.create()+"");
     }
 }
