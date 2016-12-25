@@ -1,2 +1,4 @@
 /.project
 /lx.jks
+/platforms/android/.gradle
+/platforms/android/CordovaLib/build
