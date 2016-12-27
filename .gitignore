@@ -9,3 +9,4 @@
 /platforms/android/CordovaLib/build
 /platforms/android/CordovaLib/*.iml
 /plugins
+**/*.DS_Store
