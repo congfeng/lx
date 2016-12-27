@@ -8,3 +8,4 @@
 /platforms/android/release-signing.properties
 /platforms/android/CordovaLib/build
 /platforms/android/CordovaLib/*.iml
+/plugins

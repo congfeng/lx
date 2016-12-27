@@ -9,7 +9,26 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.cf.code.lx"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.cf.code.lx"
+        },
+        "cordova-plugin-app-version": {
+            "PACKAGE_NAME": "com.cf.code.lx"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.cf.code.lx"
+        },
+        "cordova-plugin-file-opener2": {
+            "PACKAGE_NAME": "com.cf.code.lx"
+        },
+        "PluginBridge": {
+            "PACKAGE_NAME": "com.cf.code.lx"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.cf.code.lx"
+        }
+    }
 }
