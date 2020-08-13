@@ -8,7 +8,7 @@ $(document).on("pageInit","#register",function(e, pageId, $page) {
         region: 'oss-cn-shanghai',
         accessKeyId: '************',
         accessKeySecret: '****************',
-        bucket: 'cf-image'
+        bucket: 'test'
     });
     document.querySelector('#myfile').onchange = function(ee) {
         var file = ee.target.files[0];
