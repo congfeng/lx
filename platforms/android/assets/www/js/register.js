@@ -6,8 +6,8 @@ $(document).on("pageInit","#register",function(e, pageId, $page) {
     //var OSS = require('ali-oss').Wrapper;
     var ossClient = new OSS.Wrapper({
         region: 'oss-cn-shanghai',
-        accessKeyId: 'eDKPCRbX8XD6qcEd',
-        accessKeySecret: 'ggsSRFQVSgdlUeUCiFmQLtfhghXuhR',
+        accessKeyId: '************',
+        accessKeySecret: '****************',
         bucket: 'cf-image'
     });
     document.querySelector('#myfile').onchange = function(ee) {
